@@ -14,7 +14,7 @@ return {
       defaults = {
         path_display = { "smart" },
         preview = {
-          use_ft_detect = false,
+          treesitter = false, -- Disable treesitter highlighting in preview to avoid ft_to_lang error
         },
         mappings = {
           i = {
