@@ -32,7 +32,7 @@ keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
 
 -- For C++ Execution
 keymap.set("n", "<leader>b", function()
-  vim.cmd('!cd %:p:h && g++ %:t -o %:r:t &&  gtimeout 4s ./%:r:t < inputf.in > outputf.in')
+  vim.cmd('!cd %:p:h && g++-15 %:t -o %:r:t &&  gtimeout 4s ./%:r:t < inputf.in > outputf.in')
 end, {desc = "[B]uild & Run the C++ File"})
 
 -- Terminal mode keybindings
